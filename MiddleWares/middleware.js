@@ -1,6 +1,6 @@
 const { verify } = require('jsonwebtoken')
 const user = require('../Models/user');
-const secret=process.env.SECRET
+const secret="harsha"
 
 const validateToken = (req, res, next) => {
     const accessToken = req.header("token");

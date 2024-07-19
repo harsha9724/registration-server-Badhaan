@@ -66,7 +66,7 @@ router.post("/api/user/login", async (req, res) => {
             exp: Math.floor(Date.now() / 10) + 60 * 60,
             data: userData._id,
           },
-          process.env.SECRET
+          'harsha'
         );
         res.status(200).json({
           Status: "Successful",
